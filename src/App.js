@@ -56,12 +56,13 @@ function App() {
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion)
     } else {
+      setCurrentQuestion(nextQuestion)
       setShowScore(true)
     }
   }
 
   return (
-    <>
+    <div className="container">
       {/* I added a component to this app to show the progress of right and wrong ans */}
       <Result score={score} currentQuestion={currentQuestion} />
       <div className="app">
@@ -95,7 +96,7 @@ function App() {
           </>
         )}
       </div>
-    </>
+    </div>
   )
 }
 

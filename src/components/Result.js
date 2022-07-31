@@ -14,12 +14,17 @@ const Result = ({ score, currentQuestion }) => {
     <div className="result">
       <div className="right-ans">
         <span>Correct Ans</span>
-        <LinearProgress variant="determinate" value={normalise(score)} />
+        <LinearProgress
+          color="success"
+          variant="determinate"
+          value={normalise(score)}
+        />
       </div>
       <div className="wrong-ans">
         <span>Wrong Ans</span>
         <LinearProgress
           variant="determinate"
+          color="error"
           value={normalise(getWrongAns(score, currentQuestion))}
         />
       </div>
