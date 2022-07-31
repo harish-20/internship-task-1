@@ -1,0 +1,14 @@
+.result {
+  background-color: black;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+span {
+  font-size: small;
+  color: aliceblue;
+}
