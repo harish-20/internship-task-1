@@ -62,6 +62,7 @@ function App() {
 
   return (
     <>
+      {/* I added a component to this app to show the progress of right and wrong ans */}
       <Result score={score} currentQuestion={currentQuestion} />
       <div className="app">
         {showScore ? (
