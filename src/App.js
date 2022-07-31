@@ -85,6 +85,7 @@ function App() {
               {questions[currentQuestion].answerOptions.map(
                 (answerOption, index) => (
                   <button
+                    className="answer"
                     onClick={() => handleAnswer(answerOption.isCorrect)}
                     key={index}
                   >

@@ -69,6 +69,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 
 button {
@@ -103,4 +104,8 @@ button:focus {
 
 button svg {
   margin-right: 5px;
+}
+
+.answer {
+  padding: 10px;
 }
